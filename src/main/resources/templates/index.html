@@ -1,0 +1,13 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Hello Security!</title>
+</head>
+<body>
+<h1>Hello Security</h1>
+<!--动态，会根据server.servlet.context-path规定的文根路径，动态加上相对路径-->
+<a th:href="@{/logout}">Log Out1</a>
+
+<!--非动态-->
+<a href="/logout">Log Out2</a>
+</body>
+</html>
